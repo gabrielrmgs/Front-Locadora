@@ -18,6 +18,9 @@ async function getAPI(url_login, textoInputado, senhaInput) {
     if (data.nome == textoInputado) {
         if (data.senha == senhaInput) {
             window.location.href = "http://127.0.0.1:5500/loc.html";
+            if (data.nome == "admin") {
+                localStorage.setItem("user", "admin");
+            }
         } else {
             console.log("senha inválida");
         }

@@ -23,7 +23,7 @@ async function getAPI(url_cadastro, nomeInput, senhaInput) {
 
     await fetch(url_cadastro, requestOptions)
         .then((response) => response.text())
-        .then(function(result) {
+        .then(function (result) {
             console.log(result);
             window.location.href = "http://127.0.0.1:5500/index.html";
         })
