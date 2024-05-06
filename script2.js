@@ -1,11 +1,3 @@
-function troca() {
-    let tes = document.getElementById("testand")
-    tes.style.color = tes.style.color == "red" ? "black" : "red"
-
-}
-let btn = document.getElementById("colorbtn")
-btn.addEventListener("click", troca)
-
 function painel() {
     let mod = document.getElementById("modelbar")
     mod.style.display = "flex";
